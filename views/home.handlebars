@@ -1,0 +1,31 @@
+
+<h1><center>Estacionamento</center></h1>
+<div>
+    <center>
+       <img src="https://jpimg.com.br/uploads/2020/10/velozes-furiosos-vin-diesel.jpeg" alt="gif"style="width:800px;height:300px;">
+    </center>
+</div><br>
+<a href="/registro">
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">Registrar um veículo</button>
+    </div>
+</a><br>
+<h1><center>Veículos Estacionados</center></h1>
+<hr>
+    {{#each veiculos}}
+    <div class="card" style="width: 69.80rem;">   
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">Marca: {{dataValues.marca}}</li>
+        <li class="list-group-item">Modelo: {{dataValues.modelo}}</li>
+        <li class="list-group-item">Placa: {{dataValues.placa}}</li>
+        <li class="list-group-item">Pintura: {{dataValues.pintura}}</li>
+        <li class="list-group-item">Proprietário: {{dataValues.proprietario}}</li>
+        <li class="list-group-item">Entrada: {{dataValues.createdAt}}</li>
+    </ul>
+    </div>
+    <nobr><center>
+    <a href= "/atualizar/{{dataValues.id}}"><button type="button" class="btn btn-secondary btn-sm">Corrigir</button></a>
+    <a href= "/deletar/{{dataValues.id}}"><button type="button" class="btn btn-primary btn-sm">Remover Veículo</button></a>
+    </center></nobr><br>
+    {{/each}}
+<hr>

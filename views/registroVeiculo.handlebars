@@ -1,0 +1,56 @@
+<h1>Cadastro de Aluno</h1>
+
+<div class="card">
+    <form action = "/criar_registro" method="post">
+     <div class="form-group row">
+            <!--Recebe a Marca-->
+            <div class="form-group col-md-6">
+                <label for="marca">Marca</label>
+                <select id="marca" class="form-control" name="marca" required>
+                <option value="Chevrolet">Chevrolet</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Renault">Renault</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Hyundai">Hyundai</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Nissan">Nissan</option>
+                    <option value="Citroën">Citroën</option>
+                    <option value="Mistsubishi">Mitsubishi</option>
+                    <option value="Peugeot">Peugeot</option>
+                    <option value="Cherry">Chery</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mercedez-Benz">Mercedez-Benz</option>
+                    <option value="Kia">Kia</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Land Rover">Land Rover</option>
+                    <option value="Marca não registrada">Outra marca...</option>
+                </select>
+            </div>
+            <!--Recebe o Modelo-->
+            <div class="form-group col-md-6">
+                <label for="modelo">Modelo</label>
+            <input type="text" class="form-control" id="modelo" name="modelo" required>
+            </div>
+            <!--Recebe a Placa-->
+            <div class="form-group col-md-2">
+                <label for="placa">Placa</label>
+                <input type="text" class="form-control" id="placa" name="placa" required>           
+            </div>
+            <!--Recebe a Pintura-->
+            <div class="form-group col-md-4">
+                <label for="pintura">Pintura</label>
+                <input type="text" class="form-control" id="pintura" name="pintura" required>
+            </div>
+            <!--Recebe o Proprietário-->
+            <div class="form-group col-md-6">
+                <label for="propriedario">Proprietário</label>
+                <input type="text" class="form-control" id="proprietario" name="proprietario" required><br>
+            </div>
+            <button class="btn btn-primary" type="submit">Registrar</button> 
+        </div>
+    </form>
+</div>
